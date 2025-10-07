@@ -14,15 +14,7 @@ const port = process.env.port || 4000
 
 //middleware
 app.use(express.json())
-const allowedOrigins = [
-    "https://food-delivery-app-frontend-1de6.onrender.com/",
-    "https://food-delivery-app-admin-d3is.onrender.com"
-];
-
-app.use(cors({
-  origin: allowedOrigins,
-  credentials: true, // allows cookies if you use them
-}));
+app.use(cors())
 
 //db connection
 connectDB();
