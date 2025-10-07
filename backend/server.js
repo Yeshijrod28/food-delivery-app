@@ -16,8 +16,8 @@ const port = process.env.PORT || 4000
 app.use(express.json())
 
 const allowedOrigins = [
-  "https://food-delivery-app-frontend-1de6.onrender.com",
-  "https://food-delivery-app-admin-xyz.vercel.app"
+  "https://food-delivery-app-frontend-1de6.onrender.com/",
+  "https://food-delivery-app-admin-d3is.onrender.com/"
 ];
 
 app.use(cors({
