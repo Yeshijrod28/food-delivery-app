@@ -14,7 +14,15 @@ const port = process.env.port || 4000
 
 //middleware
 app.use(express.json())
-app.use(cors());
+const allowedOrigins = [
+    "https://your-frontend.vercel.https://food-delivery-app-frontend-h3nftfehf-yeshi-dorjis-projects.vercel.app/",
+    "https://food-delivery-app-admin-git-main-yeshi-dorjis-projects.vercel.app/"
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true, // allows cookies if you use them
+}));
 
 //db connection
 connectDB();
