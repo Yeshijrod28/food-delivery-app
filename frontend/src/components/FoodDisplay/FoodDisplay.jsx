@@ -9,7 +9,7 @@ const FoodDisplay = ({category}) => {
     
     return (
         <div className='food-display' id='food-display'>
-            <h2>Top dishes near you</h2>
+            <h2>Original Bhutanese</h2>
             <div className="food-display-list">
                 {food_list.length === 0 ? (
                     <p>Loading foods...</p>

@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
             <img src={assets.logo} alt="" />
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae hic alias doloribus minus tempore molestias iure doloremque incidunt repellendus temporibus. Incidunt doloribus culpa earum enim eius aperiam, mollitia nobis possimus?
+            <p>Explore the rich flavors of Bhutanese cuisine – from steaming momos to spicy ema datshi and traditional noodles.
             </p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
