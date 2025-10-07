@@ -10,11 +10,26 @@ import orderRouter from "./routes/orderRoute.js"
 
 //app config
 const app = express()
-const port = process.env.port || 4000
+const port = process.env.PORT || 4000
 
 //middleware
 app.use(express.json())
-app.use(cors())
+
+const allowedOrigins = [
+  "https://food-delivery-app-frontend-1de6.onrender.com",
+  "https://food-delivery-app-admin-xyz.vercel.app"
+];
+
+app.use(cors({
+  origin: (origin, callback) => {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true,
+}));
 
 //db connection
 connectDB();
