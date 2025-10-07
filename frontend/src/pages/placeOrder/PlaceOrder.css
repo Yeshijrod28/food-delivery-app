@@ -36,3 +36,75 @@
 .place-order .cart-total button{
     margin-top: 30px;
 }
+
+.payment-method {
+    margin: 10
+    
+}
+
+.payment-method p.title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.payment-method label {
+    display: flex;
+    padding: 2px;
+    border: 1px solid #c5c5c5;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.payment-method input[type="radio"] {
+    accent-color: tomato; 
+}
+
+.payment-method label:hover {
+    border-color: tomato;
+    background-color: #fff0f0;
+}
+
+.payment-method input[type="radio"]:checked + span {
+    font-weight: 100;
+    color: tomato;
+}
+
+
+.payment-method {
+    margin-top: 30px;
+}
+
+.payment-method p.title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border: 1px solid #c5c5c5;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.payment-method input[type="radio"] {
+    accent-color: tomato; /* makes radio red */
+}
+
+.payment-method label:hover {
+    border-color: tomato;
+    background-color: #fff0f0;
+}
+
+.payment-method input[type="radio"]:checked + span {
+    font-weight: 600;
+    color: tomato;
+}
