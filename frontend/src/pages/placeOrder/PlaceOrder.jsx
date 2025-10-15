@@ -86,31 +86,7 @@ const PlaceOrder = () => {
                     <input required name='state' onChange={onChangeHandler} value={data.state} type="text" placeholder='State' />
                 </div>
                 <input required name='phone' onChange={onChangeHandler} value={data.phone} type="text" placeholder='Phone No.' />
-
-                {/* Payment Method */}
-                <div className="payment-method">
-                    <p className="title">Payment Method</p>
-                    <label>
-                        <input
-                            type="radio"
-                            name="payment"
-                            value="online"
-                            checked={paymentMethod === "online"}
-                            onChange={(e) => setPaymentMethod(e.target.value)}
-                        />
-                        Online/Card
-                    </label>
-                    <label>
-                        <input
-                            type="radio"
-                            name="payment"
-                            value="cod"
-                            checked={paymentMethod === "cod"}
-                            onChange={(e) => setPaymentMethod(e.target.value)}
-                        />
-                        Cash on Delivery
-                    </label>
-                </div>
+                
             </div>
 
             <div className="place-order-right">
