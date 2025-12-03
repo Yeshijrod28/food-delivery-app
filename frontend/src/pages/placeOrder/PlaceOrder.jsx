@@ -17,7 +17,6 @@ const PlaceOrder = () => {
         phone: ""
     });
 
-    const [paymentMethod, setPaymentMethod] = useState(""); // New state for payment
 
     const onChangeHandler = (event) => {
         const name = event.target.name;
@@ -27,11 +26,6 @@ const PlaceOrder = () => {
 
     const placeOrder = async (event) => {
         event.preventDefault();
-
-        if (!paymentMethod) {
-            alert("Please select a payment method");
-            return;
-        }
 
         let orderItems = [];
         food_list.forEach((item) => {
@@ -45,7 +39,6 @@ const PlaceOrder = () => {
             address: data,
             items: orderItems,
             amount: getTotalCartAmount() + 100,
-            paymentMethod
         };
 
         try {
